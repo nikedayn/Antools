@@ -40,6 +40,8 @@
 // global styles
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background: #1E252B;
@@ -59,8 +61,33 @@ body {
     width: 100%;
     max-width: 1250px;
 }
+<<<<<<< HEAD
 // vars
 $btnBackground: #FF6E30;
 // header
 @import 'header';
 
+=======
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+      display: block;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+}
+>>>>>>> 98aa41b022b106ad4aa154e1698a4bdd4273d405
