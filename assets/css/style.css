@@ -1,1 +1,292 @@
-@font-face{font-family:"Poppins";font-style:normal;font-weight:400;src:url("../fonts/poppins-v20-latin-regular.eot");src:local(""),url("../fonts/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"),url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),url("../fonts/poppins-v20-latin-regular.woff") format("woff"),url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"),url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg")}@font-face{font-family:"Poppins";font-style:normal;font-weight:500;src:url("../fonts/poppins-v20-latin-500.eot");src:local(""),url("../fonts/poppins-v20-latin-500.eot?#iefix") format("embedded-opentype"),url("../fonts/poppins-v20-latin-500.woff2") format("woff2"),url("../fonts/poppins-v20-latin-500.woff") format("woff"),url("../fonts/poppins-v20-latin-500.ttf") format("truetype"),url("../fonts/poppins-v20-latin-500.svg#Poppins") format("svg")}@font-face{font-family:"Poppins";font-style:normal;font-weight:600;src:url("../fonts/poppins-v20-latin-600.eot");src:local(""),url("../fonts/poppins-v20-latin-600.eot?#iefix") format("embedded-opentype"),url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),url("../fonts/poppins-v20-latin-600.woff") format("woff"),url("../fonts/poppins-v20-latin-600.ttf") format("truetype"),url("../fonts/poppins-v20-latin-600.svg#Poppins") format("svg")}*{box-sizing:border-box}body{background:#1e252b;color:rgba(255,255,255,.5490196078);font-family:"Poppins",sans-serif;font-size:18px}.container{margin:0 auto;padding-left:108px;padding-right:108px;width:100%;max-width:1250px}
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"), url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"), url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff"), url("../fonts/poppins-v20-latin-500.ttf") format("truetype"), url("../fonts/poppins-v20-latin-500.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v20-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"), url("../fonts/poppins-v20-latin-600.ttf") format("truetype"), url("../fonts/poppins-v20-latin-600.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1E252B;
+  color: rgba(255, 255, 255, 0.5490196078);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 1220px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.tools {
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .tools {
+    margin-bottom: 200px;
+  }
+}
+.tools_title {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (min-width: 768px) {
+  .tools_title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1220px) {
+  .tools_title {
+    font-size: 48px;
+  }
+}
+.tools_subtitle {
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .tools_subtitle {
+    font-size: 18px;
+  }
+}
+.tools_list {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .tools_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100px 30px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1220px) {
+  .tools_list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.card {
+  max-width: 390px;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+@media (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.card:hover {
+  background-color: rgba(40, 48, 54, 0.6);
+  transition: all 0.4s;
+}
+.card:hover .circle {
+  opacity: 1;
+  transition: all 0.4s;
+}
+.card:hover .card_title {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s;
+}
+.card:hover .card_link {
+  color: #FFA537;
+  transition: all 0.4s;
+}
+.card:hover .card_description {
+  color: rgba(255, 255, 255, 0.78);
+  transition: all 0.4s;
+}
+.card:hover svg {
+  fill: rgba(255, 255, 255, 0.5490196078);
+  transition: all 0.4s;
+}
+.card:hover .card_btn {
+  background: #FF6E30;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s;
+}
+.card .circle {
+  width: 65px;
+  height: 65px;
+  background-color: rgba(255, 110, 48, 0.6);
+  border-radius: 50%;
+  filter: blur(50px);
+  position: absolute;
+  top: 0;
+  right: 15px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.card_wrap {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.card_title_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  transition: all 0.4s;
+}
+@media (min-width: 1220px) {
+  .card_title {
+    font-size: 24px;
+  }
+}
+.card_link {
+  color: rgba(255, 165, 55, 0.5490196078);
+  font-size: 16px;
+  transition: all 0.4s;
+}
+@media (min-width: 1220px) {
+  .card_link {
+    font-size: 18px;
+  }
+}
+.card_link:hover {
+  color: #FF6E30 !important;
+  transition: all 0.4s;
+}
+.card_description {
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+@media (min-width: 1220px) {
+  .card_description {
+    font-size: 16px;
+  }
+}
+.card_btn_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.card .input_wrap {
+  display: flex;
+  gap: 20px;
+}
+.card .input_wrap .like_input {
+  display: none;
+}
+.card .input_wrap .like_label {
+  cursor: pointer;
+}
+.card .input_wrap .like_input:checked ~ .like_label svg {
+  fill: #FD3B41;
+  transition: all 0.4s;
+}
+.card .input_wrap .like_label_svg,
+.card .input_wrap .file_btn_svg {
+  fill: rgba(255, 255, 255, 0.3803921569);
+  transition: all 0.4s;
+}
+.card .input_wrap .file_btn:hover .file_btn_svg {
+  fill: #FF6E30;
+  transition: all 0.4s;
+}
+.card_btn {
+  width: 100px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+.card_btn:hover {
+  background-color: #a0461f !important;
+  transition: all 0.4s;
+}
+
+.tools_btn {
+  background: #1E252B;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  color: #FF6E30;
+  margin: 0 auto;
+  transition: all 0.4s;
+}
+@media (min-width: 768px) {
+  .tools_btn {
+    width: 160px;
+    height: 55px;
+    font-size: 18px;
+  }
+}
+.tools_btn:hover {
+  background-color: #FF6E30;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s;
+}
