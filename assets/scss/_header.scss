@@ -1,0 +1,72 @@
+// header
+.header {
+    margin: 26px 0 104px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+
+    }
+    h1 {
+        display: inline;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 600;
+        font-size: 1.2222222em;
+        line-height: 33px;
+    }
+    .menu-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 35px;
+        &-link {
+            text-decoration: none;
+            color: #FFFFFF8C;
+            font-weight: 500;
+            font-size: 0.888888em;
+            line-height: 24px;
+        }
+    }
+    .categories {
+        display: none;
+    }
+    .login {
+        background: none;
+        border: none;
+        color: #FFFFFF8C;
+        font-weight: 600;
+        font-size: 0.88888em;
+        line-height: 24px;
+        margin-right: 41px;
+    }
+    .sing-in {
+        width: 118px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: $btnBackground;
+        border: none;
+        color: #FFFFFF8C;
+        font-weight: 600;
+        font-size: 0.88888em;
+        line-height: 24px;
+    }
+}
+.categories-label {
+    font-weight: 500;
+    font-size: 0.888888em;
+    line-height: 24px;
+    
+    span {
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        background-color: #FFFFFF8C;
+        
+    }
+}
