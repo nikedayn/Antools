@@ -10,9 +10,15 @@
         display: flex;
         align-items: center;
         column-gap: 21px;
+<<<<<<< HEAD
     }
     h1 {
         margin: 0;
+=======
+
+    }
+    h1 {
+>>>>>>> 38c9019 (header)
         display: inline;
         text-align: center;
         color: rgba(255, 255, 255, 0.9);
@@ -20,6 +26,7 @@
         font-size: 1.2222222em;
         line-height: 33px;
     }
+<<<<<<< HEAD
     nav {
         @media (max-width:768px) {
             position: absolute;
@@ -31,10 +38,14 @@
     .menu-list {
         margin: 0;
         padding: 0;
+=======
+    .menu-list {
+>>>>>>> 38c9019 (header)
         list-style: none;
         display: flex;
         justify-content: space-between;
         column-gap: 35px;
+<<<<<<< HEAD
         @media (max-width:768px) {
             flex-direction: column;
             align-items: flex-end;
@@ -67,6 +78,8 @@
             right: 110px;
             column-gap: 10px;
         }
+=======
+>>>>>>> 38c9019 (header)
         &-link {
             text-decoration: none;
             color: #FFFFFF8C;
@@ -75,6 +88,7 @@
             line-height: 24px;
         }
     }
+<<<<<<< HEAD
     .header-buttons {
         text-align: center;
     }
@@ -86,10 +100,19 @@
         border: none;
         width: 118px;
         height: 48px;
+=======
+    .categories {
+        display: none;
+    }
+    .login {
+        background: none;
+        border: none;
+>>>>>>> 38c9019 (header)
         color: #FFFFFF8C;
         font-weight: 600;
         font-size: 0.88888em;
         line-height: 24px;
+<<<<<<< HEAD
         margin-right: 13px;
         padding: 0;
         transition: color 0.3s, background-color 0.5s;
@@ -106,10 +129,21 @@
         border: none;
         width: 118px;
         height: 48px;
+=======
+        margin-right: 41px;
+    }
+    .sing-in {
+        width: 118px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: $btnBackground;
+        border: none;
+>>>>>>> 38c9019 (header)
         color: #FFFFFF8C;
         font-weight: 600;
         font-size: 0.88888em;
         line-height: 24px;
+<<<<<<< HEAD
         margin-right: 13px;
         padding: 0;
         transition: color 0.3s, background-color 0.5s;
@@ -189,5 +223,19 @@
             height: 3px;
             background-color: $btnBackground;
         }
+    }
+}
+.categories-label {
+    font-weight: 500;
+    font-size: 0.888888em;
+    line-height: 24px;
+    
+    span {
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        background-color: #FFFFFF8C;
+        
+>>>>>>> 38c9019 (header)
     }
 }
