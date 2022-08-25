@@ -46,6 +46,11 @@ body {
     color: #FFFFFF8C;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    margin: 0;
+    position: relative;
+}
+.wraper {
+    overflow-x: hidden;
 }
 .container {
     margin: 0 auto;
@@ -54,3 +59,8 @@ body {
     width: 100%;
     max-width: 1250px;
 }
+// vars
+$btnBackground: #FF6E30;
+// header
+@import 'header';
+
