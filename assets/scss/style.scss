@@ -40,6 +40,8 @@
 // global styles
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background: #1E252B;
@@ -53,4 +55,26 @@ body {
     padding-right: 108px;
     width: 100%;
     max-width: 1250px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+      display: block;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
 }
