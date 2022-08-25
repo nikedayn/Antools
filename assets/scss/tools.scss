@@ -1,112 +1,21 @@
-/* poppins-regular - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-
-  //vars
-$main_color: #FFFFFF;
-$orange_color: #FF6E30;
-
-//mixins
-@mixin hover {
-    transition: all 0.4s;  
-}
-
-@mixin textColor ($a){
-    color: rgba(255, 255, 255, $a);
-}
-
-// global styles
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background: #1E252B;
-    color: #FFFFFF8C;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-      display: block;
-      border: 0;
-      background-color: transparent;
-      cursor: pointer;
-}
-
-.container {
-    width: 94%;
-    margin: 0 auto;
-
-    @media (min-width: 768px) {
-        width: 750px;
-    }
-
-    @media (min-width: 1220px) {
-        width: 1200px;
-    }
-}
-
-
-
-//tools
 .tools {
     margin-bottom: 100px;
 
     @media (min-width:768px) {
         margin-bottom: 200px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    
+        @media (min-width: 768px) {
+            width: 750px;
+        }
+    
+        @media (min-width: 1220px) {
+            width: 1200px;
+        }
     }
 
     &_title {
