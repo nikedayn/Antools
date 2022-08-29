@@ -107,6 +107,16 @@ button {
 
 // vars
 $btnBackground: #FF6E30;
+$main_color: #FFFFFF;
+
+//mixins
+@mixin hover {
+    transition: all 0.4s;  
+}
+
+@mixin textColor ($a){
+    color: rgba(255, 255, 255, $a);
+}
 
 // header
 @import 'header';
@@ -284,5 +294,8 @@ $btnBackground: #FF6E30;
         }
     }
 }
+
+//tools
+@import "tools"
 
 
