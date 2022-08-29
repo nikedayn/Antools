@@ -62,8 +62,10 @@ body {
 
 .wraper {
     overflow-x: hidden;
-    height: 100%;
     position: relative;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .container {
@@ -115,7 +117,6 @@ $btnBackground: #FF6E30;
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-top: 104px;
-    // height: 100vh;
     @media (max-width:768px) {
         background-size: contain;
     }
