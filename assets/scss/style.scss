@@ -130,6 +130,7 @@ $main_color: #FFFFFF;
     margin-bottom: 200px;
     @media (max-width:768px) {
         background-size: contain;
+        padding-top: 76px;
     }
     @media (max-width:600px) {
         padding-top: 60px;
@@ -188,7 +189,13 @@ $main_color: #FFFFFF;
         background: #283036;
         border-radius: 15px;
         padding: 0 11px 0 18px;
-        margin-bottom: 110px;
+        margin-bottom: 90px;
+
+        &:hover .submit {
+            background-color: $btnBackground;
+            color: #FDF5FF;
+        }
+
         svg {
             width: 24.08px;
             height: 24px;
@@ -221,8 +228,7 @@ $main_color: #FFFFFF;
         &::content {
             color: #837A93;
         }
-        &
-        :focus::-webkit-input-placeholder {opacity: 0;}
+        &:focus::-webkit-input-placeholder {opacity: 0;}
         &:focus {
             outline: none;
             border: none;
@@ -250,8 +256,7 @@ $main_color: #FFFFFF;
         transition: color 0.3s, background-color 0.5s;
 
         &:hover {
-            background-color: $btnBackground;
-            color: #FDF5FF;
+            background-color: #a0461f !important;
         }
 
         @media (max-width:1024px) {
@@ -283,11 +288,24 @@ $main_color: #FFFFFF;
             width: 100%;
             height: 100%;
         }
+        
+        path {
+            transition: fill .5s;
+
+            &:hover {
+                fill: $btnBackground;
+            }
+        }
 
         svg {
-            fill: rgba(255, 255, 255, 0.78);;
+            fill: rgba(255, 255, 255, 0.78);
             width: 36px;
-            height: 36px;  
+            height: 36px;
+            transition: fill .5s;
+            
+            &:hover {
+                fill: $btnBackground;
+            }
         }
 
         .first {
