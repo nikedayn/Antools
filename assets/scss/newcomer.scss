@@ -1,0 +1,97 @@
+.newcomer {
+    .container {
+        width: 94%;
+        margin: 0 auto;
+        padding: 0;
+    
+        @media (min-width: 768px) {
+            width: 750px;
+        }
+    
+        @media (min-width: 1220px) {
+            width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &_title_wrap {
+        margin-bottom: 70px;
+    }
+
+    &_title {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 25px;
+        @include textColor (0.9);
+        @media (min-width: 768px){
+            font-size: 38px;
+        }
+
+        @media (min-width: 1220px) {
+            font-size: 48px;
+            text-align: unset;
+        }
+    }
+
+    &_subtitle {
+        @include textColor (0.55);
+        margin-bottom: 90px;
+        text-align: center;
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 1220px) {
+            text-align: unset;
+            max-width: 430px;
+        }
+    }
+
+    &_btn {
+        background-color: $btnBackground;
+        border-radius: 8px;
+        width: 120px;
+        height: 40px;
+        font-weight: 500;
+        @include textColor (0.9);
+        margin: 0 auto;
+
+        @include hover ();
+
+        &:hover {
+            background-color: #a0461f;
+        }
+
+        @media (min-width:768px) {
+            width: 160px;
+            height: 55px;
+            font-size: 18px;
+        }
+
+        @media (min-width: 1220px) {
+            margin: 0;
+        }
+    }
+
+    &_list{
+        display: grid;
+        grid-template-columns: 288px;
+        grid-template-rows: repeat(4,1fr);
+        gap: 50px;
+        justify-content: center;
+         @media (min-width:768px) {
+            grid-template-columns: repeat(2,288px);
+            grid-template-rows: repeat(2,1fr);
+            gap: 70px 24px;
+        }
+    }
+
+    .card {
+        .circle {
+            right: 0;
+            transform: translate(+50%,-50%);
+        }
+    }
+}
