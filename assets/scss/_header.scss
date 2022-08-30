@@ -34,19 +34,15 @@
         @media (max-width:768px) {
             position: absolute;
             right: -100%;
-            top: 60px;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
             background: #1E252B;
-            border-radius: 0 0 10px 10px;
-            box-shadow: -5px 5px 5px -1px $btnBackground;
-            transition: right .1s, opacity .5s;
-            opacity: 0;
-            padding: 0 10px;
+            transition: right .3s;
+            padding: 26px 90px 0;
         }
         @media (max-width:605px) {
-            padding-bottom: 90px;
-            padding-left: 20px;
-            border-radius: 0 0 0 10px;
-
+            padding: 26px 20px 0;
         }
     }
     
@@ -59,7 +55,7 @@
         column-gap: 35px;
         @media (max-width:768px) {
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
         }
         
         &-link {
@@ -87,17 +83,14 @@
         transition: transform 0.3s;
         @media (max-width:768px) {
             flex-direction: unset;
-            left: -119px;
+            right: 0;
             bottom: 0px;
             column-gap: 10px;
             transform: scaleX(0);
-            transform-origin: right;
-            background: #1E252B;
-            border-radius: 10px 0 0 10px;
-            box-shadow: -5px 0 5px 0px $btnBackground;
+            transform-origin: left;
         }
         @media (max-width:600px) {
-            left: -112.5px;
+            left: 85px;
         }
         
         &-link {
@@ -114,14 +107,14 @@
         display: flex;
         flex-wrap: nowrap;
         column-gap: 13px;
+        transition: right .3s;
+        @media (max-width:768px) {
+            transform: translateX(50%);
+        }
         @media (max-width:605px) {
             position: absolute;
             right: -100%;
-            top: 190px;
-            opacity: 0;
-            flex-direction: column;
-            row-gap: 13px;
-            transition: right .1s, opacity .5s;
+            top: 400px;
         }
     }
 
@@ -147,10 +140,6 @@
             width: 100px;
             height: 40px;
         }
-        @media (max-width:605px) {
-            width: 85px;
-            height: 25px;
-        }
     }
 
     .sing-in {
@@ -175,17 +164,12 @@
             width: 100px;
             height: 40px;
         }
-        @media (max-width:605px) {
-            width: 85px;
-            height: 25px;
-        }
     }
 }
 
 .menu-list-item-sub {
     text-decoration: none;
     position: relative;
-
     &::after {
         content: '';
         width: 7px;
@@ -211,7 +195,7 @@
 
     &:hover::after { 
         transform: rotate(225deg);
-        bottom: -2px;
+        bottom: -3px;
         left: 5px;
     }
 }
@@ -221,15 +205,21 @@
     display: none;
     order: 4;
     &:checked ~ nav {
-        right: 90px;
-        opacity: 1;
-        @media (max-width:605px) {
-            right: 20px;
-        }
+        right: 0;
     }
     &:checked ~ .header-buttons {
-        right: 20px;
-        opacity: 1;
+        right: 50%;
+    }
+    &:checked ~ .burger-menu span {
+        transform: rotate(45deg);
+        &::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+        &::before {
+            top: 0;
+        }
+
     }
 }
 .burger-menu {
@@ -240,6 +230,7 @@
         align-items: center;
         width: 25px;
         height: 25px;
+        z-index: 2;
     } 
 
     span {
@@ -248,6 +239,7 @@
         width: 25px;
         height: 3px;
         background-color: $btnBackground;
+        transition: transform .3s;
 
         &::after {
             position: absolute;
@@ -257,6 +249,7 @@
             width: 25px;
             height: 3px;
             background-color: $btnBackground;
+            transition: transform .3s, top .3s;
         }
 
         &::before {
@@ -267,6 +260,7 @@
             width: 25px;
             height: 3px;
             background-color: $btnBackground;
+            transition: transform .3s, top .3s;
         }
     }
 }
