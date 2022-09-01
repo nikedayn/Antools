@@ -83,14 +83,14 @@
         transition: transform 0.3s;
         @media (max-width:768px) {
             flex-direction: unset;
-            right: 0;
+            left: 110px;
             bottom: 0px;
             column-gap: 10px;
             transform: scaleX(0);
             transform-origin: left;
         }
         @media (max-width:600px) {
-            left: 85px;
+            left: 100px;
         }
         
         &-link {
