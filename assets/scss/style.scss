@@ -51,7 +51,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     margin: 0;
-    position: relative;
+    position: relative;  
     @media (max-width:1024px) {
         font-size: 16px;
     }
@@ -83,7 +83,12 @@ body {
         padding-right: 20px;
     }
 }
-
+main{
+    margin-bottom: 250px; 
+    @media (max-width:767px){
+        margin-bottom: 150px; 
+    }
+}
 img{
     display: block;
     max-width: 100%;
@@ -318,7 +323,10 @@ $main_color: #FFFFFF;
 //tools
 @import "tools";
 @import "brands";
-@import "newcomer"
+@import "newcomer";
+@import "join";
+@import "footer";
+
 
 
 
