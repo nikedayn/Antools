@@ -1,0 +1,92 @@
+.join{
+    &:hover .join_form_btn{
+        background-color: #FF6E30;
+        color: #FDF5FF;
+    }
+    .container {
+        text-align: center;
+    }
+    &_title{
+        @include textColor (0.9);
+        height: 62px;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        margin-top: 250px;
+    }
+    &_subtitle{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 430px;
+        margin: 0 auto 100px;
+    }
+    &_form{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 497.66px;
+        height: 64px;
+        background: #283036;
+        border-radius: 15px;
+        padding: 0 11px 0 18px;
+        margin-bottom: 240px;
+        margin: 0 auto;
+        gap: 10px;
+        max-width: 100%;
+        &_email{
+            display: flex;
+            align-items: center;
+            column-gap: 13px;
+            background: #283036;
+            border: 2px #283036 solid;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: "Poppins";
+            width: 70%;
+            border-radius: 5px;
+            line-height: 100%;
+            height: 48px;
+            @include textColor (0.9);
+            &:required:focus:invalid:not(:placeholder-shown){
+                border: 2px red solid;
+            }
+            &:required:focus:valid:not(:placeholder-shown){
+                border: 2px green solid;
+            }
+            &::placeholder{
+                transition: opacity 0.5s;
+                @include textColor(0.38);
+            }
+            &:focus{
+                outline: none;
+                border: none;
+                caret-color: #837A93;
+                &::placeholder{
+                    opacity: 0;
+                }
+            }
+            
+        }
+        &_btn{
+            text-align: center;
+            display: inline-block;
+            background: none;
+            border-radius: 8px;
+            border: none;
+            width: 30%;
+            height: 48px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.88888em;
+            line-height: 24px;
+            padding: 0;
+            transition: color 0.3s, background-color 0.5s;
+            cursor: pointer;
+            &:hover{
+                background-color: #a0461f !important;
+            }
+        }
+    }
+}
