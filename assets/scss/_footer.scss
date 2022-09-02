@@ -23,6 +23,14 @@
             align-items: center;
             column-gap: 0;
             row-gap: 40px;
+            width: 260px;
+            margin: 0 auto;
+        }
+    }
+
+    &_item {
+        @media (max-width:767px){
+            width: 100%;
         }
     }
     &_info{

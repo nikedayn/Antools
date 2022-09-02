@@ -1164,6 +1164,13 @@ button {
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 40px;
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer_item {
+    width: 100%;
   }
 }
 .footer_info {
