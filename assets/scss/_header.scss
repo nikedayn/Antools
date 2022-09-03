@@ -135,10 +135,6 @@
         &:hover {
             color: $btnBackground;
         }
-        @media (max-width:1024px) {
-            width: 100px;
-            height: 40px;
-        }
     }
 
     .sing-in {
